@@ -17,7 +17,7 @@ In this window type:
 Press Enter. 
 You can close the Command Prompt again.
 
-# Ubuntu 16.04 / 18.04
+# Ubuntu 16.04 / 18.04 installation instructions:
 python is available in Ubuntu. 
 if pip has not been installed yet, install it from a terminal (Ctrl + Alt + T) with: 
 
