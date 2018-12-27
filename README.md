@@ -11,16 +11,20 @@ make sure to also select the install pip option.
 Next, run the Command Prompt as Administrator. 
 Search for 'cmd', right-click the Command Prompt icon and select 'Run as Administrator'.
 In this window type:
+
  pip install exifread
+ 
 Press Enter. 
 You can close the Command Prompt again.
 
 # Ubuntu 16.04 / 18.04
 python is available in Ubuntu. 
 if pip has not been installed yet, install it from a terminal (Ctrl + Alt + T) with: 
+
  sudo apt install pip
 
 Install the exifread package (also from a terminal):
+
  pip install exifread
  
 # Running the script:
