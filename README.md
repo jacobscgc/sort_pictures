@@ -5,8 +5,8 @@ Simple script to sort pictures by year and month.
 This script uses python and the python package exifread. 
 
 # Windows 10 installation instructions:
-Get python python if you do not have it already (https://www.python.org/downloads/).
-make sure to also select the install pip option.
+Get python if you do not have it already (https://www.python.org/downloads/).
+If you are not using the default installation, make sure to also select the install pip option.
 
 Next, run the Command Prompt as Administrator. 
 Search for 'cmd', right-click the Command Prompt icon and select 'Run as Administrator'.
