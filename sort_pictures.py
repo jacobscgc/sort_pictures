@@ -7,25 +7,23 @@ the correct folder.
 This script depends on exifread (pip install exifread).
 
 Run the script with:
-	python sort_pictures.py -f input_picture_folder -o sorted_picture_folder
+	python sort_pictures.py
 	
 Output folder cannot exist. Choose a different output folder name or delete the existing output folder first.
 """
 
+import tkinter as tk
+from tkinter import filedialog, simpledialog
 import exifread
-import argparse
 import os
 from shutil import copyfile
 
-# Deal with command line options:
-parser = argparse.ArgumentParser()
-parser.add_argument('-f', '--folder', default=None, help="Enter the directory containing the pictures here: Example: ~/Documents/Pictures")
-parser.add_argument('-o', '--output_folder', default='Pictures_sorted', help="Enter the name of the output folder, which is created in the file from which this script is called. Example: Pictures_sorted")
-args = parser.parse_args()
+root = tk.Tk()
+root.withdraw()
 
-mypath = os.path.expanduser(args.folder)
-cwd = os.getcwd()
-output_folder = cwd + '/' + args.output_folder
+mypath = filedialog.askdirectory(title = "Please select the photo folder")
+output_folder_name = simpledialog.askstring("Input", "Please specify an output directory name.")
+output_folder = mypath + '/' + output_folder_name
 
 # Check whether the image folder exists:
 if not os.path.exists(mypath):
