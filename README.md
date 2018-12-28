@@ -35,16 +35,26 @@ python is available in Ubuntu.
 if pip has not been installed yet, install it from a terminal (Ctrl + Alt + T) with: 
 
  sudo apt install pip
+ sudo apt install python3-tk  # only if you want to use python3
 
 Install the exifread package (also from a terminal):
 
  pip install exifread
+ pip3 install exifread
  
 The terminal can be closed.
 
 On the top right of the github page, click download. Unpack the sort_pictures.py file to your computer.
  
 ## Running the script:
+
+### Windows:
 Simply double click the script. It opens a dialog box to select the folder with pictures to be sorted. The output folder is saved in the same folder as the pictures (output folder is called 'sorted').
+
+### Ubuntu:
+Open a terminal (Ctrl + Alt + Delete), go to the directory containing sort_pictures.py and run:
+
+python sort_pictures.py
+(python3 sort_pictures.py if you want to use python3)
 
 It does not move the pictures but it copies the pictures. So the original pictures are kept in place. 
