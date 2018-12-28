@@ -1,4 +1,4 @@
-# sort_pictures
+## sort_pictures
 Simple script to sort pictures by year and month.
 
 # Dependancies:
@@ -28,4 +28,6 @@ Install the exifread package (also from a terminal):
  pip install exifread
  
 # Running the script:
-Simply double click the script. It opens a dialog box to select the folder with pictures to be sorted and asks how the output folder should be called. The output folder is saved in the same folder as the pictures.
+Simply double click the script. It opens a dialog box to select the folder with pictures to be sorted. The output folder is saved in the same folder as the pictures (output folder is called 'sorted').
+
+It does not move the pictures but it copies the pictures. So the original pictures are kept in place. 
