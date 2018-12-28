@@ -24,6 +24,7 @@ root.withdraw()
 mypath = filedialog.askdirectory(title = "Please select the photo folder")
 output_folder = mypath + '/sorted'
 unsorted_folder = output_folder + '/unsorted'
+file_extensions = ['JPG', 'jpg', 'jpeg', 'tiff', 'tif']
 
 # Check whether the image folder exists:
 if not os.path.exists(mypath):
@@ -41,7 +42,7 @@ os.mkdir(output_folder)
 os.mkdir(unsorted_folder)
         
 # put all filenames in a list:
-files = [f for f in os.listdir(mypath) if os.path.isfile(os.path.join(mypath, f))]
+files = [f for f in os.listdir(mypath) if os.path.isfile(os.path.join(mypath, f)) and f.split('.')[-1] in file_extensions]
 
 def _create_directories(output_folder, year, year_month):
     """
