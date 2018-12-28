@@ -11,9 +11,16 @@ Run the script with:
     
 Output folder cannot exist. Choose a different output folder name or delete the existing output folder first.
 """
-
-import tkinter as tk
-from tkinter import filedialog, messagebox
+import sys
+if sys.version_info[0] == 3:
+    # for Python3
+    import tkinter as tk   ## notice lowercase 't' in tkinter here
+    from tkinter import filedialog, messagebox
+else:
+    # for Python2
+    import Tkinter as tk  ## notice capitalized T in Tkinter
+    import tkFileDialog as filedialog
+    import tkMessageBox as messagebox
 import exifread
 import os
 from shutil import copyfile, copy
