@@ -1,5 +1,16 @@
 # sort_pictures
-Simple script to sort pictures by year and month.
+Simple script to sort pictures by year and month. 
+
+It creates a 'sorted' directory in the same directory as where the pictures are located to be sorted.
+Next, it checks for which years and months there are pictures and creates directories for those in the 'sorted' directory.
+Finally, it copies the pictures to the correct directory in the 'sorted' directory (original files are kept). Pictures that do not have exif data are copied to the 'sorted/unsorted' directory.
+
+It acccepts the following file formats:
+- .jpg
+- .JPG
+- .jpeg
+- .tiff
+- .tif
 
 ## Dependancies:
 This script uses python and the python package exifread. 
