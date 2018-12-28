@@ -1,10 +1,10 @@
-## sort_pictures
+# sort_pictures
 Simple script to sort pictures by year and month.
 
-# Dependancies:
+## Dependancies:
 This script uses python and the python package exifread. 
 
-# Windows 10 installation instructions:
+## Windows 10 installation instructions:
 Get python if you do not have it already (https://www.python.org/downloads/).
 If you are not using the default installation, make sure to also select the install pip option.
 
@@ -17,7 +17,9 @@ In this window type:
 Press Enter. 
 You can close the Command Prompt again.
 
-# Ubuntu 16.04 / 18.04 installation instructions:
+On the top right of the github page, click download. Unpack the sort_pictures.py file to your computer.
+
+## Ubuntu 16.04 / 18.04 installation instructions:
 python is available in Ubuntu. 
 if pip has not been installed yet, install it from a terminal (Ctrl + Alt + T) with: 
 
@@ -27,7 +29,11 @@ Install the exifread package (also from a terminal):
 
  pip install exifread
  
-# Running the script:
+The terminal can be closed.
+
+On the top right of the github page, click download. Unpack the sort_pictures.py file to your computer.
+ 
+## Running the script:
 Simply double click the script. It opens a dialog box to select the folder with pictures to be sorted. The output folder is saved in the same folder as the pictures (output folder is called 'sorted').
 
 It does not move the pictures but it copies the pictures. So the original pictures are kept in place. 
